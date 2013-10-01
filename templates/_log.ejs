@@ -1,0 +1,15 @@
+<div>
+	vente : <%= id %>
+	date : <%= date %>
+	total : <%= total %>
+	<a href="#" class="show-details">Details</a>
+	<div class="details" style="display:none;">
+		<% for(var i in articles.length) {
+			var article = articles[i] %>
+			<%= article.id %>
+			<%= article.price %>
+			<%= article.quantity %>
+			<%= article.quantity * article.price  %>
+		<% } %>
+	</div>
+</div>
